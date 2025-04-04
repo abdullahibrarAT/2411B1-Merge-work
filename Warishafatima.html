@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="warishafatima.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image img {
+                margin-left: 0;
+                margin-top: 20px;
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            ul {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>My Portfolio</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="portfolio-container">
+        <section id="about" class="profile-card">
+            <div class="profile-info">
+                <span class="intro">Hello I'm</span>
+                <h1>Warisha Fatima</h1>
+                <h3>Web Developer</h3>
+                <p class="contact-info">
+                    📧 warishafatima892@gmail.com <br>
+                    📞 +123 456 7890 <br>
+                    📍 Your Location
+                </p>
+            </div>
+            <div class="profile-image">
+                <img src="profile pic.avif" alt="Your Photo">
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <p class="tagline">The technologies I excel in</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p class="tagline">Some of my best work</p>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of the project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of the project.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or queries!</p>
+            <button onclick="window.location.href='mailto:warishafatima892@gmail.com'">Contact Now</button>
+        </section>
+    </div>
+
+    <script>
+        gsap.from(".navbar", {duration: 1, y: -50, opacity: 0});
+        gsap.from(".profile-card", {duration: 1, y: 50, opacity: 0, delay: 0.5});
+        gsap.from("#skills", {duration: 1, x: -50, opacity: 0, delay: 1});
+        gsap.from("#projects", {duration: 1, x: 50, opacity: 0, delay: 1.5});
+        gsap.from("#contact", {duration: 1, y: 50, opacity: 0, delay: 2});
+    </script>
+</body>
+</html>
