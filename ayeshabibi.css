@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px 15px 15px 0;
+    border-radius: 50px 50px 50px 0;
     margin-bottom: 15px;
 }
 .name {
@@ -60,7 +60,7 @@ body {
 .img-box {
     height: 300px;
     width: 300px;
-    background-image: url('pic.jpg');
+    background-image: url('pic001.jpg');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
